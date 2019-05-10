@@ -1,0 +1,21 @@
+function building(args) {
+let floors = Number(args[0]);
+let rooms = Number(args[1]);
+
+for (let i = floors; i>=1; i--){
+    let output = '';
+    for (let j = 0; j <= rooms-1; j++) {
+        if (i == floors) {
+            output += `L${i}${j} `;
+        } else if (i % 2 == 0) {
+            output += `O${i}${j} `;
+        } else {
+            output += `A${i}${j} `;
+        }
+
+    }
+    console.log(output);
+}
+}
+
+building ([6,4]);

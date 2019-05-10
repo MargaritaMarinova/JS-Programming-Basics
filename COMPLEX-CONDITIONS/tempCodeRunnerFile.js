@@ -1,0 +1,1 @@
+fruitShop([banana, monday, 10]);
